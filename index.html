@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nihongo Quest</title>
+  <style>
+    :root {
+      --bg-a: #f3f9ff;
+      --bg-b: #d4e7ff;
+      --ink: #11223a;
+      --panel: #ffffff;
+      --accent: #ff7a18;
+      --good: #198754;
+      --bad: #b3261e;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at 20% 10%, #ffffff 0%, var(--bg-a) 45%, var(--bg-b) 100%);
+    }
+    body {
+      display: grid;
+      place-items: center;
+    }
+    canvas {
+      border-radius: 18px;
+      box-shadow: 0 20px 50px rgba(17, 34, 58, 0.18);
+      background: transparent;
+      max-width: 96vw;
+      max-height: 96vh;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="960" height="540"></canvas>
+  <script src="./game.js"></script>
+</body>
+</html>
