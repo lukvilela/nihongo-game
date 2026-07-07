@@ -1,0 +1,12 @@
+# deps
+node_modules/
+
+# artefatos de teste/build
+output/
+dist/
+build/
+*.log
+
+# sistema/IDE
+.DS_Store
+.vscode/
